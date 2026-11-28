@@ -1,0 +1,213 @@
+/* Day 5 - Booking Styling */
+
+.book-btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 14px 32px;
+  border-radius: 8px;
+  background: #16a34a;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.book-btn:hover {
+  background: #15803d;
+}
+
+.not-available {
+  margin-top: 25px;
+  color: #dc2626;
+  font-weight: bold;
+}
+
+.booking-container {
+  max-width: 900px;
+  margin: 30px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.booking-room,
+.booking-form {
+  padding: 25px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.booking-room img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.booking-form label {
+  font-weight: bold;
+}
+
+.booking-form input {
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 7px;
+  font-size: 15px;
+}
+
+.booking-form button {
+  padding: 13px;
+  border: none;
+  border-radius: 7px;
+  background: #16a34a;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.booking-form button:hover {
+  background: #15803d;
+}
+
+.price-summary {
+  padding: 15px;
+  border-radius: 8px;
+  background: #eff6ff;
+}
+
+.price-summary h3 {
+  margin-top: 8px;
+  color: #1e3a8a;
+}
+
+.bookings-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.booking-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 15px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+}
+
+.booking-card img {
+  width: 180px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.booking-info {
+  flex: 1;
+}
+
+.status {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.status.confirmed {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.status.cancelled {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.cancel-btn {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 7px;
+  background: #dc2626;
+  color: white;
+  cursor: pointer;
+}
+
+.cancel-btn:hover {
+  background: #b91c1c;
+}
+
+@media (max-width: 700px) {
+  .booking-container {
+    grid-template-columns: 1fr;
+  }
+
+  .booking-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .booking-card img {
+    width: 100%;
+  }
+}
+
+/* Day 10 - My Bookings (grouped by reservation) */
+
+.bookings-page h1 {
+  margin-top: 0;
+}
+
+.reservation-card {
+  margin-bottom: 25px;
+  padding: 18px;
+  background: #e0e7ff;
+  border-radius: 14px;
+}
+
+.reservation-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.reservation-header span,
+.reservation-header small {
+  display: block;
+  color: #475569;
+  font-size: 13px;
+}
+
+.reservation-total {
+  text-align: right;
+}
+
+.reservation-total span {
+  color: #0f172a;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.reservation-card .booking-card {
+  margin-bottom: 12px;
+}
+
+.receipt-link {
+  display: inline-block;
+  color: #2563eb;
+  font-weight: bold;
+  text-decoration: none;
+}

@@ -1,0 +1,249 @@
+/* Day 8 - Home Page */
+
+.announcement-bar {
+  margin-bottom: 18px;
+  padding: 10px;
+  border-radius: 8px;
+  background: #fef3c7;
+  color: #92400e;
+  text-align: center;
+  font-size: 14px;
+}
+
+.hero-banner {
+  padding: 70px 25px 40px;
+  text-align: center;
+  color: white;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #1e3a8a, #2563eb 60%, #06b6d4);
+}
+
+.hero-tag {
+  display: inline-block;
+  padding: 6px 16px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.18);
+  font-size: 14px;
+}
+
+.hero-banner h1 {
+  margin: 20px 0 14px;
+  font-size: 44px;
+  line-height: 1.2;
+}
+
+.hero-banner h1 span {
+  color: #fde68a;
+}
+
+.hero-banner p {
+  max-width: 620px;
+  margin: 0 auto 25px;
+  color: #dbeafe;
+  font-size: 17px;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.hero-primary,
+.hero-secondary {
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.hero-primary {
+  background: white;
+  color: #1e3a8a;
+  border: none;
+}
+
+.hero-secondary {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.hero-stats {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.hero-stats div {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-stats strong {
+  font-size: 26px;
+}
+
+.hero-stats span {
+  color: #bfdbfe;
+  font-size: 14px;
+}
+
+.home-section {
+  margin-top: 45px;
+}
+
+.section-head {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.section-head h2 {
+  margin: 0;
+}
+
+.section-head.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  text-align: left;
+}
+
+.view-all {
+  color: #2563eb;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.category-card {
+  position: relative;
+  height: 220px;
+  overflow: hidden;
+  border-radius: 14px;
+  cursor: pointer;
+}
+
+.category-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s;
+}
+
+.category-card:hover img {
+  transform: scale(1.08);
+}
+
+.category-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 18px;
+  color: white;
+  background: linear-gradient(transparent 30%, rgba(0, 0, 0, 0.75));
+}
+
+.category-overlay h3,
+.category-overlay p {
+  margin: 0;
+}
+
+.category-overlay span {
+  margin-top: 6px;
+  font-weight: bold;
+}
+
+.promo-banner {
+  margin-top: 45px;
+  padding: 45px 20px;
+  text-align: center;
+  color: white;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #7c2d12, #ea580c);
+}
+
+.promo-tag {
+  padding: 4px 14px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.2);
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.coupon-box {
+  display: inline-block;
+  margin: 10px 0 20px;
+  padding: 10px 30px;
+  border: 2px dashed white;
+  border-radius: 8px;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+.promo-btn {
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 12px 28px;
+  border-radius: 8px;
+  background: white;
+  color: #9a3412;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.perks-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.perk-box {
+  padding: 25px;
+  text-align: center;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.07);
+}
+
+.perk-box > div {
+  font-size: 34px;
+}
+
+.testimonials {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.testimonial {
+  padding: 22px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.07);
+}
+
+.testimonial h4 {
+  margin-bottom: 0;
+  color: #475569;
+}
+
+@media (max-width: 600px) {
+  .hero-banner h1 {
+    font-size: 30px;
+  }
+}
